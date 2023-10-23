@@ -45,7 +45,7 @@ if ($tinggi_badan == NULL || $berat_badan == NULL) {
 } else {
     
 
-    $hitungBMI = $berat_badan / (($tinggi_badan*$tinggi_badan)*0.001);
+    $hitungBMI = $berat_badan / (($tinggi_badan*0.001)**2);
 
     if ($hitungBMI <= 18.4) {
         $status = "Underweight";
