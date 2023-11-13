@@ -11,9 +11,10 @@
         <div class="container">
             <table class="table">
             <h1>List Mobil</h1>
-
+            <h1>Showroom EAD</h1>
             <thead>
                 <tr> 
+                    <th scope="col">ID</th>;
                     <th scope="col">Nama Mobil</th>;
                     <th scope="col">Brand Mobil</th>;
                     <th scope="col">Warna Mobil</th>;
@@ -44,13 +45,15 @@
             ?>
 
             <tr>
-                    <th scope="row"><?= $selects['id']?></th>
+                    <th scope='row'><?= $selects['id']?></th>
                     <td><?= $selects['nama_mobil']?></td>
                     <td><?= $selects['brand_mobil']?></td>
                     <td><?= $selects['warna_mobil']?></td>
                     <td><?= $selects['tipe_mobil']?></td>
                     <td><?= $selects['harga_mobil']?></td>
-                    <td><input type="submit" class="btn btn-primary" action="form_detail_mobil.php" value="Detail Mobil"></td>
+                    <td><form method = "GET" action="form_detail_mobil.php">
+                        <input type="submit" class="btn btn-primary" value="Lihat Detail">
+                    </form></td>
             </tr>
             <?php
 

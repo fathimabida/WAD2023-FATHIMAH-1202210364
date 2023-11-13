@@ -20,6 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     // d. Ambil data tipe mobil
 
     // e. Ambil data harga mobil
+    $id = $_GET['id'];
     $namaMobil = $_POST['nama_mobil'];
     $brandMobil = $_POST['brand_mobil'];
     $warnaMobil = $_POST['warna_mobil'];
