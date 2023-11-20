@@ -51,9 +51,7 @@
                     <td><?= $selects['warna_mobil']?></td>
                     <td><?= $selects['tipe_mobil']?></td>
                     <td><?= $selects['harga_mobil']?></td>
-                    <td><form method = "GET" action="form_detail_mobil.php">
-                        <input type="submit" class="btn btn-primary" value="Lihat Detail">
-                    </form></td>
+                    <td> <a href="form_detail_mobil.php?id=<?php echo $selects['id']?>" class="btn btn-primary">Detail</a></td>
             </tr>
             <?php
 
