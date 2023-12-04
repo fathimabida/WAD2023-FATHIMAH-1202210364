@@ -1,0 +1,33 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    /**
+     * Run the migrations.
+     */
+    public function up(): void
+    {
+        Schema::create('showroom_mobil', function (Blueprint $table) {
+            $table->id();
+            $table->String('nama_mobil');
+            $table->String('brand_mobil');
+            $table->String('warna_mobil');
+            $table->String('tipe_mobil');
+            $table->Integer('harga_mobil');
+            $table->timestamps();
+
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     */
+    public function down(): void
+    {
+        Schema::dropIfExists('showroom_mobil');
+    }
+};
